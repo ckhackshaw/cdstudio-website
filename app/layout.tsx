@@ -14,6 +14,20 @@ const adieu = localFont({
   display: "swap",
 });
 
+const brasley = localFont({
+  src: [
+    {
+      path: "../public/fonts/Brasley-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/Brasley-Semibold.otf",
+      weight: "600",
+    },
+  ],
+  variable: "--font-brasley",
+});
+
 export const metadata: Metadata = {
   title: "CD Studio",
   description: "Digital. Branding. Agency.",
@@ -26,7 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${adieu.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${adieu.variable} ${brasley.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
