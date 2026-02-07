@@ -31,7 +31,7 @@ export default function Home() {
         <div className="">
           {/* HERO */}
           <section className="max-w-400 mx-auto px-8">
-            <h1 className="mb-10 text-xl md:text-4xl">
+            <h1 className="mb-10 text-xl md:text-4xl font-inter">
               We are branding & digital design agency that
               <br className="hidden md:inline" /> helps build brands that people
               feel & connect to
@@ -45,7 +45,7 @@ export default function Home() {
                 priority
                 unoptimized
               />
-              <h1 className={`my-10 text-xl md:text-7xl`}>
+              <h1 className="my-10 text-xl md:text-7xl font-adieu">
                 New website coming soon
               </h1>
             </div>
