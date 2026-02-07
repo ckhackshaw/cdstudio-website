@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ServicesCarousel from "../components/ServicesCarousel";
 
 export default function Home() {
   return (
@@ -49,6 +50,9 @@ export default function Home() {
               </h1>
             </div>
           </section>
+
+          {/* CAROUSEL */}
+          <ServicesCarousel />
         </div>
       </main>
 
