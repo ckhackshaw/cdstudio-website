@@ -15,7 +15,9 @@ const ServicesCarousel = () => {
   return (
     <Carousel
       title={
-        <h2 className={`text-3xl text-black font-semibold`}>Our Services</h2>
+        <h2 className="text-3xl text-black font-semibold font-brasley">
+          Our Services
+        </h2>
       }
     >
       {slides.map(({ title, image }) => (
@@ -28,7 +30,7 @@ const ServicesCarousel = () => {
             priority
           />
           <div className="top-0 absolute left-0 right-0 bottom-0 bg-black/60 flex justify-center items-center">
-            <h1 className={`text-4xl`}>{title}</h1>
+            <h1 className="text-4xl font-adieu">{title}</h1>
           </div>
         </div>
       ))}
