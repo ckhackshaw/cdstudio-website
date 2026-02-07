@@ -16,10 +16,10 @@ export default function Home() {
               className="mr-20 mb-2 sm:mb-0"
               priority
             />
-            <p className="text-xl">Digital. Branding. Agency.</p>
+            <p className="text-xl font-inter">Digital. Branding. Agency.</p>
           </div>
           <div className="">
-            <a href="#" className="text-xl">
+            <a href="#" className="text-xl font-inter">
               Contact
             </a>
           </div>
