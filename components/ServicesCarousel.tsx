@@ -1,26 +1,6 @@
 import React from "react";
 import Carousel from "./Carousel";
 import Image from "next/image";
-import localFont from "next/font/local";
-
-const adieu = localFont({
-  src: "../public/Adieu-Regular.ttf",
-});
-
-const brasley = localFont({
-  src: [
-    {
-      path: "../public/Brasley Regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/Brasley Semibold.otf",
-      weight: "600",
-      style: "normal",
-    },
-  ],
-});
 
 const ServicesCarousel = () => {
   const slides = [
