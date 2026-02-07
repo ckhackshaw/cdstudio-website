@@ -21,7 +21,7 @@ const brasley = localFont({
       weight: "400",
     },
     {
-      path: "../public/fonts/Brasley-Semibold.otf",
+      path: "../public/fonts/Brasley-SemiBold.otf",
       weight: "600",
     },
   ],
