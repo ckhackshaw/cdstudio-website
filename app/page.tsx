@@ -2,7 +2,28 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div>
+      {/* HEADER */}
+      <header>
+        <div className="flex flex-col items-baseline max-w-400 justify-between mx-auto px-8 py-8 sm:flex-row">
+          <div className="flex flex-col sm:flex-row items-baseline">
+            <Image
+              src={"/logo.svg"}
+              alt="CD Studio Logo"
+              width={170}
+              height={50}
+              className="mr-20 mb-2 sm:mb-0"
+              priority
+            />
+            <p className="text-xl">Digital. Branding. Agency.</p>
+          </div>
+          <div className="">
+            <a href="#" className="text-xl">
+              Contact
+            </a>
+          </div>
+        </div>
+      </header>
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
