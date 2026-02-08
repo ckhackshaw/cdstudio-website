@@ -61,7 +61,7 @@ export default function Home() {
         <div className="flex items-baseline max-w-400 mx-auto px-8 py-16 flex-col md:flex-row gap-4 md:justify-between">
           {/* LEFT COLUMN */}
           <div>
-            <div className="flex items-baseline gap-6 mb-6 flex-col">
+            <div className="flex items-baseline gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6">
               <div className="w-30">
                 <Image
                   src={"/logo.svg"}
@@ -86,7 +86,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className={`flex items-baseline gap-4 text-1xl flex-col`}>
+            <div
+              className={`flex items-baseline gap-4 text-1xl flex-col md:flex-row lg:gap-16 md:pb-6`}
+            >
               <div className="w-30">
                 <h3>Email us</h3>
               </div>
