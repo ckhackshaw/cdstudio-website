@@ -71,7 +71,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="gap-8 flex">
+              <div className="gap-8 flex font-brasley">
                 <a
                   href="#"
                   className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
@@ -86,7 +86,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="flex items-baseline gap-4 text-1xl flex-col md:flex-row lg:gap-16 md:pb-6">
+            <div className="flex items-baseline gap-4 text-1xl lg:text-2xl flex-col md:flex-row lg:gap-16 md:pb-6 font-adieu">
               <div className="w-30">
                 <h3>Email us</h3>
               </div>
@@ -98,7 +98,7 @@ export default function Home() {
 
           {/* RIGHT COLUMN */}
           <div>
-            <div className="mb-4">
+            <div className="mb-4 font-brasley">
               <h3 className="text-[20px]">Our Services</h3>
             </div>
             <div className="flex gap-4 flex-col md:flex-row md:gap-12">
