@@ -98,37 +98,55 @@ export default function Home() {
 
           {/* RIGHT COLUMN */}
           <div>
-            <div className="mb-4 font-brasley">
-              <h3 className="text-[20px]">Our Services</h3>
+            <div className="mb-4">
+              <h3 className="text-[20px] font-brasley">Our Services</h3>
             </div>
             <div className="flex gap-4 flex-col md:flex-row md:gap-12">
               <div>
-                <h5 className="mb-2 font-semibold">Branding</h5>
+                <h5 className="mb-2 font-semibold font-brasley">Branding</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2">Design</li>
-                  <li className="text-xs mb-2">Strategy & Direction</li>
-                  <li className="text-xs mb-2">Guidelines</li>
-                  <li className="text-xs mb-2">Packaging</li>
+                  <li className="text-xs mb-2 font-brasley">Design</li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Strategy & Direction
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">Guidelines</li>
+                  <li className="text-xs mb-2 font-brasley">Packaging</li>
                 </ul>
               </div>
               <div>
-                <h5 className="mb-2 font-semibold">Digital</h5>
+                <h5 className="mb-2 font-semibold font-brasley">Digital</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2">Web Design & Development</li>
-                  <li className="text-xs mb-2">App Design & Development</li>
-                  <li className="text-xs mb-2">Social Media Management</li>
-                  <li className="text-xs mb-2">Website Management</li>
-                  <li className="text-xs mb-2">SEO</li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Web Design & Development
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">
+                    App Design & Development
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Social Media Management
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Website Management
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">SEO</li>
                 </ul>
               </div>
               <div>
-                <h5 className="mb-2 font-semibold">Consultancy</h5>
+                <h5 className="mb-2 font-semibold font-brasley">Consultancy</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2">Advisory Support</li>
-                  <li className="text-xs mb-2">Market Strategy</li>
-                  <li className="text-xs mb-2">Growth Roadmapping</li>
-                  <li className="text-xs mb-2">Social & Cultural Impact</li>
-                  <li className="text-xs mb-2">Inclusive Positioning</li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Advisory Support
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">Market Strategy</li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Growth Roadmapping
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Social & Cultural Impact
+                  </li>
+                  <li className="text-xs mb-2 font-brasley">
+                    Inclusive Positioning
+                  </li>
                 </ul>
               </div>
             </div>
