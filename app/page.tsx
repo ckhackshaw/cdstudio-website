@@ -74,21 +74,19 @@ export default function Home() {
               <div className="gap-8 flex">
                 <a
                   href="#"
-                  className={`inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full`}
+                  className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
                 >
                   <span>LinkedIn</span>
                 </a>
                 <a
                   href="#"
-                  className={`inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full`}
+                  className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
                 >
                   <span>Instagram</span>
                 </a>
               </div>
             </div>
-            <div
-              className={`flex items-baseline gap-4 text-1xl flex-col md:flex-row lg:gap-16 md:pb-6`}
-            >
+            <div className="flex items-baseline gap-4 text-1xl flex-col md:flex-row lg:gap-16 md:pb-6">
               <div className="w-30">
                 <h3>Email us</h3>
               </div>
@@ -101,36 +99,36 @@ export default function Home() {
           {/* RIGHT COLUMN */}
           <div>
             <div className="mb-4">
-              <h3 className={`text-[20px]`}>Our Services</h3>
+              <h3 className="text-[20px]">Our Services</h3>
             </div>
             <div className="flex gap-4 flex-col md:flex-row md:gap-12">
               <div>
-                <h5 className={`mb-2 font-semibold`}>Branding</h5>
+                <h5 className="mb-2 font-semibold">Branding</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className={`text-xs mb-2`}>Design</li>
-                  <li className={`text-xs mb-2`}>Strategy & Direction</li>
-                  <li className={`text-xs mb-2`}>Guidelines</li>
-                  <li className={`text-xs mb-2`}>Packaging</li>
+                  <li className="text-xs mb-2">Design</li>
+                  <li className="text-xs mb-2">Strategy & Direction</li>
+                  <li className="text-xs mb-2">Guidelines</li>
+                  <li className="text-xs mb-2">Packaging</li>
                 </ul>
               </div>
               <div>
-                <h5 className={`mb-2 font-semibold`}>Digital</h5>
+                <h5 className="mb-2 font-semibold">Digital</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className={`text-xs mb-2`}>Web Design & Development</li>
-                  <li className={`text-xs mb-2`}>App Design & Development</li>
-                  <li className={`text-xs mb-2`}>Social Media Management</li>
-                  <li className={`text-xs mb-2`}>Website Management</li>
-                  <li className={`text-xs mb-2`}>SEO</li>
+                  <li className="text-xs mb-2">Web Design & Development</li>
+                  <li className="text-xs mb-2">App Design & Development</li>
+                  <li className="text-xs mb-2">Social Media Management</li>
+                  <li className="text-xs mb-2">Website Management</li>
+                  <li className="text-xs mb-2">SEO</li>
                 </ul>
               </div>
               <div>
-                <h5 className={`mb-2 font-semibold`}>Consultancy</h5>
+                <h5 className="mb-2 font-semibold">Consultancy</h5>
                 <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className={`text-xs mb-2`}>Advisory Support</li>
-                  <li className={`text-xs mb-2`}>Market Strategy</li>
-                  <li className={`text-xs mb-2`}>Growth Roadmapping</li>
-                  <li className={`text-xs mb-2`}>Social & Cultural Impact</li>
-                  <li className={`text-xs mb-2`}>Inclusive Positioning</li>
+                  <li className="text-xs mb-2">Advisory Support</li>
+                  <li className="text-xs mb-2">Market Strategy</li>
+                  <li className="text-xs mb-2">Growth Roadmapping</li>
+                  <li className="text-xs mb-2">Social & Cultural Impact</li>
+                  <li className="text-xs mb-2">Inclusive Positioning</li>
                 </ul>
               </div>
             </div>
