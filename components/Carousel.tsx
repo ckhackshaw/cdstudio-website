@@ -84,10 +84,22 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
 
         <div className="flex gap-4 mt-4 sm:mt-0">
           <button onClick={() => scroll("left")}>
-            <Image src="/arrow_left.svg" width={40} height={5} alt="Left" />
+            <Image
+              className="cursor-pointer"
+              src="/arrow_left.svg"
+              width={40}
+              height={5}
+              alt="Left"
+            />
           </button>
           <button onClick={() => scroll("right")}>
-            <Image src="/arrow_right.svg" width={40} height={5} alt="Right" />
+            <Image
+              className="cursor-pointer"
+              src="/arrow_right.svg"
+              width={40}
+              height={5}
+              alt="Right"
+            />
           </button>
         </div>
       </div>
