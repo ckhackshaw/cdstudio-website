@@ -73,13 +73,13 @@ export default function Home() {
               </div>
               <div className="gap-8 flex font-brasley">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/cdstudio/"
                   className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
                 >
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/cd_studio_design/"
                   className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
                 >
                   <span>Instagram</span>
@@ -91,7 +91,7 @@ export default function Home() {
                 <h3>Email us</h3>
               </div>
               <div>
-                <a href="#">hello@cdstudio.co.uk</a>
+                <a href="mailto:hello@cdstudio.design">hello@cdstudio.design</a>
               </div>
             </div>
           </div>
