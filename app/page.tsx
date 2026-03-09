@@ -37,14 +37,14 @@ export default function Home() {
               feel & connect to
             </h1>
             <div className="flex flex-col items-center">
-              <Image
-                src="/placeholder.svg"
-                alt="CD Studio Logo"
-                width={860}
-                height={460}
-                priority
-                unoptimized
-              />
+              <iframe
+                className="max-w-215 max-h-115aspect-video"
+                src="https://www.youtube.com/embed/8B-JvfzU7ug?si=vF1vxoUFXpOtcbbn&amp;controls=1&amp;autoplay=1&amp;mute=1"
+                title="CDStudio Promo Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
               <h1 className="my-10 text-xl md:text-7xl font-adieu">
                 New website coming soon
               </h1>
