@@ -38,7 +38,7 @@ export default function Home() {
             </h1>
             <div className="flex flex-col items-center">
               <iframe
-                className="max-w-215 max-h-115aspect-video"
+                className="max-w-215 max-h-115 aspect-video"
                 src="https://www.youtube.com/embed/8B-JvfzU7ug?si=vF1vxoUFXpOtcbbn&amp;controls=1&amp;autoplay=1&amp;mute=1"
                 title="CDStudio Promo Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
