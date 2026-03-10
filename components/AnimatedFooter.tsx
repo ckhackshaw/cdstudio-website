@@ -83,7 +83,7 @@ const AnimatedFooter: FC = () => {
         <div className="flex gap-4 flex-col md:flex-row md:gap-12">
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -113,7 +113,7 @@ const AnimatedFooter: FC = () => {
           </div>
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -144,7 +144,7 @@ const AnimatedFooter: FC = () => {
           </div>
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
