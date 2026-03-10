@@ -29,8 +29,10 @@ const ServicesCarousel = () => {
             height={330}
             priority
           />
-          <div className="top-0 absolute left-0 right-0 bottom-0 bg-black/60 flex justify-center items-center">
-            <h1 className="text-4xl font-adieu">{title}</h1>
+          <div className="top-0 absolute left-0 right-0 bottom-0 bg-black/60 flex justify-center items-center transition-colors duration-300 hover:bg-black/40">
+            <h1 className="text-4xl font-adieu transition-transform duration-300 hover:scale-105">
+              {title}
+            </h1>
           </div>
         </div>
       ))}

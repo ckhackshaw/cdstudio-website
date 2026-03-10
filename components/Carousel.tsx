@@ -77,13 +77,31 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
     return () => clearInterval(interval);
   }, [slideWidth]);
 
+  const ease = [0.25, 0.1, 0.25, 1] as const;
+
   return (
     <section className="flex bg-white py-16 flex-col overflow-hidden">
       <div className="max-w-400 mx-auto px-8 flex flex-col justify-between w-full mb-8 sm:flex-row">
-        {title}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, delay: 0, ease }}
+        >
+          {title}
+        </motion.div>
 
-        <div className="flex gap-4 mt-4 sm:mt-0">
-          <button onClick={() => scroll("left")}>
+        <motion.div
+          className="flex gap-4 mt-4 sm:mt-0"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.15, ease }}
+        >
+          <button
+            onClick={() => scroll("left")}
+            className="transition-transform duration-300 hover:-translate-x-1 hover:opacity-70"
+          >
             <Image
               className="cursor-pointer"
               src="/arrow_left.svg"
@@ -92,7 +110,10 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
               alt="Left"
             />
           </button>
-          <button onClick={() => scroll("right")}>
+          <button
+            onClick={() => scroll("right")}
+            className="transition-transform duration-300 hover:translate-x-1 hover:opacity-70"
+          >
             <Image
               className="cursor-pointer"
               src="/arrow_right.svg"
@@ -101,7 +122,7 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
               alt="Right"
             />
           </button>
-        </div>
+        </motion.div>
       </div>
 
       <div ref={containerRef} className="relative overflow-hidden pl-5">
