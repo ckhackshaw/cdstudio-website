@@ -1,42 +1,30 @@
-import Image from "next/image";
 import ServicesCarousel from "../components/ServicesCarousel";
+import AnimateOnScroll from "../components/AnimateOnScroll";
+import AnimatedHero from "../components/AnimatedHero";
+import AnimatedHeader from "../components/AnimatedHeader";
+import AnimatedFooter from "../components/AnimatedFooter";
 
 export default function Home() {
   return (
     <div>
       {/* HEADER */}
       <header>
-        <div className="flex flex-col items-baseline max-w-400 justify-between mx-auto px-8 py-8 sm:flex-row">
-          <div className="flex flex-col sm:flex-row items-baseline">
-            <Image
-              src={"/logo.svg"}
-              alt="CD Studio Logo"
-              width={170}
-              height={50}
-              className="mr-20 mb-2 sm:mb-0"
-              priority
-            />
-            <p className="text-xl font-inter">Digital. Branding. Agency.</p>
-          </div>
-          <div className="">
-            <a href="#" className="text-xl font-inter">
-              Contact
-            </a>
-          </div>
-        </div>
+        <AnimatedHeader />
       </header>
 
       {/* MAIN CONTENT */}
       <main>
         <div className="">
           {/* HERO */}
-          <section className="max-w-400 mx-auto px-8">
-            <h1 className="mb-10 text-xl md:text-4xl font-inter">
-              We are branding & digital design agency that
-              <br className="hidden md:inline" /> helps build brands that people
-              feel & connect to
-            </h1>
-            <div className="flex flex-col items-center">
+          <AnimatedHero
+            heading={
+              <h1 className="mb-10 text-xl md:text-4xl font-inter">
+                We are branding & digital design agency that
+                <br className="hidden md:inline" /> helps build brands that
+                people feel & connect to
+              </h1>
+            }
+            video={
               <iframe
                 className="max-w-215 max-h-115 aspect-video"
                 src="https://www.youtube.com/embed/8B-JvfzU7ug?si=vF1vxoUFXpOtcbbn&amp;controls=1&amp;autoplay=1&amp;mute=1"
@@ -45,113 +33,24 @@ export default function Home() {
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               ></iframe>
+            }
+            tagline={
               <h1 className="my-10 text-xl md:text-7xl font-adieu">
                 New website coming soon
               </h1>
-            </div>
-          </section>
+            }
+          />
 
           {/* CAROUSEL */}
-          <ServicesCarousel />
+          <AnimateOnScroll direction="left" duration={0.6}>
+            <ServicesCarousel />
+          </AnimateOnScroll>
         </div>
       </main>
 
       {/* FOOTER */}
       <footer>
-        <div className="flex items-baseline max-w-400 mx-auto px-8 py-16 flex-col md:flex-row gap-4 md:justify-between">
-          {/* LEFT COLUMN */}
-          <div>
-            <div className="flex items-baseline gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6">
-              <div className="w-30">
-                <Image
-                  src={"/logo.svg"}
-                  alt="CD Studio Logo"
-                  width={120}
-                  height={36}
-                  priority
-                />
-              </div>
-              <div className="gap-8 flex font-brasley">
-                <a
-                  href="https://www.linkedin.com/company/cdstudio/"
-                  className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
-                >
-                  <span>LinkedIn</span>
-                </a>
-                <a
-                  href="https://www.instagram.com/cd_studio_design/"
-                  className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full"
-                >
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </div>
-            <div className="flex items-baseline gap-4 text-1xl lg:text-2xl flex-col md:flex-row lg:gap-16 md:pb-6 font-adieu">
-              <div className="w-30">
-                <h3>Email us</h3>
-              </div>
-              <div>
-                <a href="mailto:hello@cdstudio.design">hello@cdstudio.design</a>
-              </div>
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN */}
-          <div>
-            <div className="mb-4">
-              <h3 className="text-[20px] font-brasley">Our Services</h3>
-            </div>
-            <div className="flex gap-4 flex-col md:flex-row md:gap-12">
-              <div>
-                <h5 className="mb-2 font-semibold font-brasley">Branding</h5>
-                <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2 font-brasley">Design</li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Strategy & Direction
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">Guidelines</li>
-                  <li className="text-xs mb-2 font-brasley">Packaging</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="mb-2 font-semibold font-brasley">Digital</h5>
-                <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2 font-brasley">
-                    Web Design & Development
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">
-                    App Design & Development
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Social Media Management
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Website Management
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">SEO</li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="mb-2 font-semibold font-brasley">Consultancy</h5>
-                <ul className="[&>li]:before:content-['>'] [&>li]:before:mr-2">
-                  <li className="text-xs mb-2 font-brasley">
-                    Advisory Support
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">Market Strategy</li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Growth Roadmapping
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Social & Cultural Impact
-                  </li>
-                  <li className="text-xs mb-2 font-brasley">
-                    Inclusive Positioning
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <AnimatedFooter />
       </footer>
     </div>
   );
