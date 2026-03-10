@@ -42,12 +42,16 @@ const AnimatedHeader: FC = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.7, ease }}
       >
-        <a
-          href="#"
-          className="text-xl font-inter relative after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:bg-current after:origin-right after:scale-x-0 hover:after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-350 after:ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+        <button
+          onClick={() =>
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="text-xl font-inter relative after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:bg-current after:origin-right after:scale-x-0 hover:after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-350 after:ease-[cubic-bezier(0.25,0.1,0.25,1)] cursor-pointer"
         >
           Contact
-        </a>
+        </button>
       </motion.div>
     </div>
   );

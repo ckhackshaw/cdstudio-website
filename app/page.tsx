@@ -49,7 +49,7 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer>
+      <footer id="contact">
         <AnimatedFooter />
       </footer>
     </div>
