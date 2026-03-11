@@ -31,14 +31,14 @@ const AnimatedFooter: FC = () => {
           <div className="gap-8 flex font-brasley">
             <a
               target="_blank"
-              href="https://www.linkedin.com/company/cdstudio/"
+              href="https://www.linkedin.com/company/cdstudiodesign/"
               className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full transition-all duration-300 hover:bg-foreground hover:text-background hover:scale-105"
             >
               <span>LinkedIn</span>
             </a>
             <a
               target="_blank"
-              href="https://www.instagram.com/cd-studio/"
+              href="https://www.instagram.com/cdstudiodesign/"
               className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full transition-all duration-300 hover:bg-foreground hover:text-background hover:scale-105"
             >
               <span>Instagram</span>
