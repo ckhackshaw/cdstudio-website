@@ -1,8 +1,13 @@
 # AGENTS.md
 
+## Purpose
+
+This file defines how automated agents (AI tools, code assistants) and contributors should interact with this repository.
+The goal is to keep changes safe, consistent, and aligned with project standards.
+
 ## Project Overview
 
-This repository contains the source code for the agency website.
+This repository contains the source code for a digital branding agency website.
 
 The site is built using **Next.js (App Router)** and styled with **Tailwind CSS**.
 It is deployed as a **static site on Vercel**.
@@ -25,7 +30,7 @@ Agents and contributors should aim to keep the project **lightweight and static-
 
 ---
 
-# Technology Stack
+## Technology Stack
 
 Core framework:
 
@@ -118,13 +123,6 @@ Static assets such as:
 - icons
 - logos
 - favicons
-
-Example structure:
-
-```
-/public/images
-/public/icons
-```
 
 All static images should live here.
 
@@ -293,7 +291,7 @@ Future features should maintain the **static-first philosophy** to ensure:
 
 ---
 
-# Agent Behavior Guidelines
+## Agent Behavior Guidelines
 
 When modifying this repository:
 
@@ -304,6 +302,65 @@ When modifying this repository:
 5. Keep components reusable and clean.
 
 If unsure about structure, follow existing patterns rather than introducing new ones.
+
+---
+
+## Core Principles
+
+All agents and contributors must follow these principles:
+
+- Prefer **simple, maintainable solutions**
+- Avoid premature optimization
+- Favor **explicit code over magic**
+- Minimize breaking API changes
+- Think in terms of **scalability and analytics**
+- Optimize for **real-world usage**, not theoretical perfection
+
+---
+
+## Agent Forbidden Actions
+
+Agents must never:
+
+1. Hardcode secrets or tokens
+2. Bypass authorization checks
+3. Push to GitHub. No interactions with GitHub
+
+---
+
+## Change Protocol
+
+For any non-trivial change, agents must:
+
+- Explain the change
+- Explain why it’s needed
+- Explain tradeoffs
+- Provide migration path (if schema is affected)
+- Provide rollback strategy
+
+---
+
+## Definition of Done
+
+A task is complete when:
+
+- Code compiles
+- No breaking changes introduced
+- Performance impact considered
+- Security considered
+- Analytics value preserved
+- Error handling is explicit
+
+---
+
+## Agent Accountability
+
+AI agents are expected to:
+
+- Ask clarifying questions when requirements are ambiguous
+- Propose safer alternatives when destructive changes are requested
+- Flag performance or data risks early
+- Prefer scalable, production-grade solutions over shortcuts
 
 ---
 
