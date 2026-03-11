@@ -13,7 +13,7 @@ const AnimatedFooter: FC = () => {
       <div>
         {/* Logo + socials row */}
         <motion.div
-          className="flex items-baseline gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6"
+          className="flex items-end gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -21,7 +21,7 @@ const AnimatedFooter: FC = () => {
         >
           <div className="w-30">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="CD Studio Logo"
               width={120}
               height={36}

@@ -9,8 +9,8 @@ const ease = [0.25, 0.1, 0.25, 1] as const;
 
 const AnimatedHeader: FC = () => {
   return (
-    <div className="flex flex-col items-baseline max-w-400 justify-between mx-auto px-8 py-8 sm:flex-row">
-      <div className="flex flex-col sm:flex-row items-baseline">
+    <div className="flex flex-col items-end max-w-400 justify-between mx-auto px-8 py-8 sm:flex-row">
+      <div className="flex flex-col sm:flex-row items-end">
         {/* Logo — first in, fade from left */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -18,10 +18,10 @@ const AnimatedHeader: FC = () => {
           transition={{ duration: 0.5, delay: 0, ease }}
         >
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="CD Studio Logo"
-            width={170}
-            height={50}
+            width={160}
+            height={30}
             className="mr-20 mb-2 sm:mb-0"
             priority
           />
