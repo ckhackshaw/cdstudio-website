@@ -18,6 +18,11 @@ interface CarouselInterface {
 
 type Direction = "left" | "right";
 
+interface StableItem {
+  id: number;
+  element: React.ReactNode;
+}
+
 const Carousel: FC<CarouselInterface> = ({ title, children }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const slideRef = useRef<HTMLDivElement>(null);
@@ -25,7 +30,9 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
   const x = useMotionValue(0);
 
   const [slideWidth, setSlideWidth] = useState(0);
-  const [items, setItems] = useState(Children.toArray(children));
+  const [items, setItems] = useState<StableItem[]>(() =>
+    Children.toArray(children).map((child, i) => ({ id: i, element: child })),
+  );
 
   /* Measure slide width once mounted */
   useLayoutEffect(() => {
@@ -132,14 +139,14 @@ const Carousel: FC<CarouselInterface> = ({ title, children }) => {
           drag="x"
           dragElastic={0.1}
         >
-          {items.map((child, i) => (
+          {items.map(({ id, element }, i) => (
             <motion.div
               ref={i === 0 ? slideRef : undefined}
-              key={i}
+              key={id}
               className="shrink-0"
               whileHover={{ scale: 1.03 }}
             >
-              {child}
+              {element}
             </motion.div>
           ))}
         </motion.div>

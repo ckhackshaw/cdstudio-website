@@ -13,7 +13,7 @@ const AnimatedFooter: FC = () => {
       <div>
         {/* Logo + socials row */}
         <motion.div
-          className="flex items-baseline gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6"
+          className="flex items-end gap-6 mb-6 flex-col md:flex-row lg:gap-16 md:pb-6"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -21,7 +21,7 @@ const AnimatedFooter: FC = () => {
         >
           <div className="w-30">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="CD Studio Logo"
               width={120}
               height={36}
@@ -31,14 +31,14 @@ const AnimatedFooter: FC = () => {
           <div className="gap-8 flex font-brasley">
             <a
               target="_blank"
-              href="https://www.linkedin.com/company/cdstudio/"
+              href="https://www.linkedin.com/company/cdstudiodesign/"
               className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full transition-all duration-300 hover:bg-foreground hover:text-background hover:scale-105"
             >
               <span>LinkedIn</span>
             </a>
             <a
               target="_blank"
-              href="https://www.instagram.com/cd-studio/"
+              href="https://www.instagram.com/cdstudiodesign/"
               className="inline-flex items-center justify-center text-sm border px-3 py-1 rounded-full transition-all duration-300 hover:bg-foreground hover:text-background hover:scale-105"
             >
               <span>Instagram</span>
@@ -83,7 +83,7 @@ const AnimatedFooter: FC = () => {
         <div className="flex gap-4 flex-col md:flex-row md:gap-12">
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -113,7 +113,7 @@ const AnimatedFooter: FC = () => {
           </div>
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -144,7 +144,7 @@ const AnimatedFooter: FC = () => {
           </div>
           <div>
             <motion.h5
-              className="mb-2 font-semibold font-brasley"
+              className="mb-2 font-semibold font-brasley text-xl"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}

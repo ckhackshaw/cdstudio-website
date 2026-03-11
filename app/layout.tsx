@@ -29,7 +29,7 @@ const brasley = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "CD Studio",
+  title: "CD Studio Design - Digital. Branding. Agency.",
   description: "Digital. Branding. Agency.",
 };
 
